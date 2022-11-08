@@ -1,8 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +12,155 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+ /* NAVBAR */
+ nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: burlywood;
+  padding: 1rem 5rem;
+}
+nav h1 {
+  color: beige;
+}
+nav h1:hover {
+  text-decoration: underline 2px;
+  text-underline-offset: 2px;
+}
+/* FORM  */
+main {
+  display: flex;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 3rem;
+  border-right: 2px solid black;
+}
+form .inputFld {
+  display: flex;
+  flex-direction: column;
+}
+form .inputFld label {
+  margin: .5rem 0;
+  font-size: 1.4rem;
+}
+form .multiInput {
+  display: flex;
+  margin: .5rem 0;
+}
+form .multiInput input {
+  width: 1rem;
+  margin-top: -5px;
+  vertical-align: baseline;
+}
+form .multiInput label {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+input[type='checkbox'],
+input[type='radio'] {
+  width: 1rem;
+  margin: 0 10px;
+  padding-right: 10px;
+}
+form .inputFld input {
+  padding: .5rem;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+form input:focus {
+  outline: none;
+}
+form button {
+  margin-top: 1rem;
+  padding: .6rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 1.4rem;
+}
+button[type="submit"] {
+  background-color: burlywood;
+}
+button[type="submit"]:hover {
+  background-color: beige;
+}
+button[type="reset"] {
+  margin-left: 2rem;
+  background-color: beige;
+}
+button[type="reset"]:hover {
+  background-color: burlywood;
+}
+/* Studen cards */
+.studentList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.studentList h1 {
+  margin: 2rem;
+}
+.studentList ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.studentList ul li {
+  list-style-type: none;
+}
+.card {
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid black;
+}
+.card h2 {
+  font-size: 1.4rem;
+}
+.card .cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .3rem;
+}
+
+/* Media Queries  */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  form {
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  .studentList {
+    width: 100%;
+  }
+  .studentList ul {
+    justify-content: space-around;
+  }
+  .card {
+    width: 100%;
+    height: 10rem;
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .studentList ul {
+    justify-content: space-around;
+  }
+  .card {
+    width: 100%;
+    height: 10rem;
+    margin: 1rem 0;
+  }
 }
