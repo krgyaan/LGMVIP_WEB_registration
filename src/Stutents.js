@@ -10,12 +10,12 @@ function Stutents() {
                         <div className="card">
                             <img src="https://picsum.photos/100/150" alt="student" />
                             <div className="cardBody">
-                                <h2>Student Name</h2>
-                                <p>Student Email</p>
-                                <p>Student Website</p>
-                                <p>Student Image</p>
-                                <p>Student Gender</p>
-                                <p>Student Skills</p>
+                                <h2>setName</h2>
+                                <p>setEmail</p>
+                                <p>setWebsite</p>
+                                <p>setImage</p>
+                                <p>setGender</p>
+                                <p>setSkills</p>
                             </div>
                         </div>
                     </li>
@@ -23,12 +23,12 @@ function Stutents() {
                         <div className="card">
                             <img src="https://picsum.photos/100/150" alt="student" />
                             <div className="cardBody">
-                                <h2>Student Name</h2>
-                                <p>Student Email</p>
-                                <p>Student Website</p>
-                                <p>Student Image</p>
-                                <p>Student Gender</p>
-                                <p>Student Skills</p>
+                                <h2>setName</h2>
+                                <p>setEmail</p>
+                                <p>setWebsite</p>
+                                <p>setImage</p>
+                                <p>setGender</p>
+                                <p>setSkills</p>
                             </div>
                         </div>
                     </li>

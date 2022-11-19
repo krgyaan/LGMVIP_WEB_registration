@@ -1,24 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function Form() {
+        
     return (
         <div>
             <form autoComplete="off">
                 <div className="inputFld">
                     <label htmlFor="name">Name</label>
-                    <input type="text" id="name" />
+                    <input type="text" id="name" onChange={getName}/>
                 </div>
                 <div className="inputFld">
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" />
+                    <input type="email" id="email" onChange={getEmail} />
                 </div>
                 <div className="inputFld">
                     <label htmlFor="url">Website</label>
-                    <input type="website" id="website" />
+                    <input type="website" id="website" onChange={getWebsite} />
                 </div>
                 <div className="inputFld">
                     <label htmlFor="image">Image Link</label>
-                    <input type="text" id="image" />
+                    <input type="text" id="image" onChange={getImage} />
                 </div>
                 <div className="multiInput">
                     <label htmlFor="gender">Gender</label>
